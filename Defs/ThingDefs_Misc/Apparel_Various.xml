@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Name="ApparelArmorPowerBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/AramidAdvancedCombatArmor/SAABFuture_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.001</generateCommonality>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>34</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <Uranium>25</Uranium>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/AramidAdvancedCombatArmor/SAABFuture</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+<ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>Comm_Apparel_AramidAdvancedCombatArmor</defName>
+    <label>Aramid Advanced Combat Armor</label>
+    <description>A high-tech powered suit offering excellent protection against bullets, blunt trauma, and environmental hazards. Designed for frontline soldiers who need survivability without sacrificing too much mobility.</description>
+    <recipeMaker>
+      <displayPriority>105</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="ApparelArmorHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/AramidAdvancedCombatArmorHelmet/SAABFuture_Helm_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <generateCommonality>0.001</generateCommonality>
+    <statBases>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <costList>
+      <Uranium>15</Uranium>
+      <Synthread>15</Synthread>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/AramidAdvancedCombatArmorHelmet/SAABFuture_Helm</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetPowerBase">
+    <defName>Comm_Apparel_AramidAdvancedCombatArmorHelmet</defName>
+    <label>marine helmet</label>
+    <description>A sleek, spacer-tech helmet designed to protect against high-velocity impacts and energy bursts. Pairs with Aramid Advanced Combat Armor for a balanced mix of durability, insulation, and visibility on the battlefield.</description>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <recipeMaker>
+      <displayPriority>100</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Krupps&Thomond Powered Armor -->
+  <VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase">
+    <defName>Comm_Warcasket_PowerArmor</defName>
+    <label>krupps n'Thomond Powered Armor</label>
+    <shortDescription>A reinforced warcasket shell engineered for environmental resilience and heavy combat.</shortDescription>
+    <description>A reinforced warcasket shell engineered for environmental resilience and heavy combat. Capable of shrugging off flames and radiation, it turns the wearer into a walking fortress—ideal for breaching fortified zones and hostile ruins.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ExplorerExosuit/Explorerarmor_south</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>60</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.0</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.5</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>135</Steel>
+      <Uranium>50</Uranium>
+      <DevilstrandCloth>100</DevilstrandCloth>
+    </costList>
+    <researchPrerequisites>
+      <li>VFEP_SpecialisedWarcaskets</li>
+    </researchPrerequisites>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ExplorerExosuit/Explorerarmor</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>WarcasketSpecialised</li>
+        <li>WarcasketFlamer</li>
+        <li>WarcasketAll</li>
+      </tags>
+    </apparel>
+    <modExtensions>
+      <li Class="VFECore.ApparelExtension">
+        <equippedStatFactors>
+          <Flammability>0</Flammability>
+        </equippedStatFactors>
+        <traitsOnEquip>
+          <li>VFEP_WarcasketTrait</li>
+        </traitsOnEquip>
+        <traitsOnUnequip>
+          <li>VFEP_Shellcasket</li>
+        </traitsOnUnequip>
+        <pawnCapacityMinLevels>
+          <li>
+            <capacity>Moving</capacity>
+            <minLevel>0.7</minLevel>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <minLevel>0.7</minLevel>
+          </li>
+        </pawnCapacityMinLevels>
+      </li>
+    </modExtensions>
+  </VFEPirates.WarcasketDef>
+  <VFEPirates.WarcasketDef ParentName="VFEP_WarcasketShoulderPadBase">
+    <defName>Comm_WarcasketShoulders_PowerArmor</defName>
+    <label>krupps n'Thomond Powered Armor Shoulders</label>
+    <shortDescription>Armored pauldrons tailored for the modular warcasket frame. Reinforced with flame-resistant composites.</shortDescription>
+    <description>Armored pauldrons tailored for the modular warcasket frame. Reinforced with flame-resistant composites, they offer reliable protection without hindering upper body flexibility. Designed to slot perfectly with the matching torso unit.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ExplorerExosuit/ExplorerarmorShoulders_south</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.0</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>55</Steel>
+      <DevilstrandCloth>50</DevilstrandCloth>
+    </costList>
+    <researchPrerequisites>
+      <li>VFEP_SpecialisedWarcaskets</li>
+    </researchPrerequisites>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Hands</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ExplorerExosuit/ExplorerarmorShoulders</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>WarcasketSpecialised</li>
+        <li>WarcasketFlamer</li>
+        <li>WarcasketAll</li>
+      </tags>
+    </apparel>
+    <modExtensions>
+      <li Class="VFECore.ApparelExtension">
+        <equippedStatFactors>
+          <Flammability>0.5</Flammability>
+        </equippedStatFactors>
+      </li>
+    </modExtensions>
+  </VFEPirates.WarcasketDef>
+
+  <VFEPirates.WarcasketDef ParentName="VFEP_WarcasketHelmetBase">
+    <defName>Comm_WarcasketHelmet_PowerArmor</defName>
+    <label>krupps n'Thomond Powered Armor Helmet</label>
+    <shortDescription>A specialized warcasket helmet built for extreme conditions.</shortDescription>
+    <description>A specialized warcasket helmet built for extreme conditions. Outfitted with advanced filtration and full environmental sealing, it offers unmatched protection from toxins and heat—ideal for navigating irradiated or chemical-laden battlefields</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ExplorerExosuit/ExplorerarmorHelmet_south</texPath>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <statBases>
+      <Mass>5</Mass>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.0</ArmorRating_Heat>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+      <ToxicResistance>1</ToxicResistance>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>35</Steel>
+      <Plasteel>30</Plasteel>
+    </costList>
+    <researchPrerequisites>
+      <li>VFEP_SpecialisedWarcaskets</li>
+    </researchPrerequisites>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ExplorerExosuit/ExplorerarmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>WarcasketSpecialised</li>
+        <li>WarcasketFlamer</li>
+        <li>WarcasketAll</li>
+      </tags>
+    </apparel>
+  </VFEPirates.WarcasketDef>
+
+  </Defs>

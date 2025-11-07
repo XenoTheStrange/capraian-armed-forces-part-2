@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--========== Interact ============-->
+
+  <SoundDef>
+    <defName>Comm_Interact_Weapon</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/WeaponHandling/SwitchFireMode</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Launcher ============-->
+
+  <SoundDef>
+    <defName>Comm_Shot_AWDS</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/IncendiaryLauncher</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Rifle ============-->
+
+  <SoundDef>
+    <defName>Comm_Shot_Rifle</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/M4_OneShot</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Shotgun ============-->
+
+  <SoundDef>
+    <defName>Comm_Shot_Shotgun</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AA12_OneShot</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Coil MG ============-->
+
+  <SoundDef>
+    <defName>Comm_Shot_CMG</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/M39_EMR_OneShot</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Antimat ============-->
+
+  <SoundDef>
+    <defName>Comm_Shot_Anti</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/M107A1_OneShot</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Warcasket MG ============-->
+
+  <SoundDef>
+    <defName>Comm_Shot_WMG</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AX50_OneShot</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
